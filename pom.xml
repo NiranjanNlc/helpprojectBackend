@@ -20,6 +20,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.4.0</version>
+        </dependency>
           <!-- https://mvnrepository.com/artifact/com.twilio.sdk/twilio-java-sdk -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

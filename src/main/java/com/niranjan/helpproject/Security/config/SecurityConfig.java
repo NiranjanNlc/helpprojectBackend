@@ -80,17 +80,24 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/**/*.jpg",
                         "/**/*.html",
                         "/school/save/**",
-                        "/api/auth/**",
                         "/admin/list",
                         "/**/*.css",
                         "/**/*.js",
-                        "/api/auth/**")
+                        "/**/*.json",
+                        "/send/suggestion",
+                        "/send/",
+                        "/send/get",
+                        "/send/getHelpedNumber")
                 .permitAll()
                 .antMatchers("/admin/list")
                 .permitAll()
-                .antMatchers("/api/auth/**")
+                .antMatchers("/api/auth/signin")
+                .permitAll()
+                .antMatchers("/api/auth/signup")
                 .permitAll()
                 .antMatchers("/school/save/**")
+                .permitAll()
+                .antMatchers("/")
                 .permitAll()
                 .anyRequest()
                 .authenticated();

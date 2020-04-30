@@ -1,4 +1,4 @@
-package com.niranjan.helpproject.User;
+package com.niranjan.helpproject.Security.User;
 
 
 import lombok.*;
@@ -34,5 +34,16 @@ public class Customer
       this.email=email;
     }
 
-
+    @Override
+    public String toString() {
+        return "Customer{" +
+                       "id=" + id +
+                       ", rid='" + rid + '\'' +
+                       ", firstName='" + firstName + '\'' +
+                       ", lastName='" + lastName + '\'' +
+                       ", phoneNumber='" + phoneNumber + '\'' +
+                       ", postCode='" + postCode + '\'' +
+                       ", email='" + email + '\'' +
+                       '}';
+    }
 }

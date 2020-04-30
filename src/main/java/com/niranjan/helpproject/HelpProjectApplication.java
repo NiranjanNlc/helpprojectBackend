@@ -13,10 +13,7 @@ import org.springframework.stereotype.Component;
 public class HelpProjectApplication {
 
     public static void main(String[] args) {
-        Role role = new Role();
-        role.setName(RoleName.ROLE_USER);
-
-        SpringApplication.run(HelpProjectApplication.class, args);
+      SpringApplication.run(HelpProjectApplication.class, args);
     }
 
     @Component
@@ -27,9 +24,12 @@ public class HelpProjectApplication {
 
         @Override
         public void run(String... args) throws Exception {
-//            Role role = new Role();
-//            role.setName(RoleName.ROLE_USER);
-//            roleRepository.save(role);
+            Role role = new Role();
+//            if(roleRepository.findByName(RoleName.ROLE_ADMIN)==null) {
+//                role.setName(RoleName.ROLE_ADMIN);
+//                roleRepository.save(role);
+//            }
+
             }
         }
 

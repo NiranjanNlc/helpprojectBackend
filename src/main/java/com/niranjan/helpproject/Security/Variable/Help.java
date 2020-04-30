@@ -1,4 +1,4 @@
-package com.niranjan.helpproject.Variable;
+package com.niranjan.helpproject.Security.Variable;
 
 
 import lombok.*;
@@ -22,4 +22,7 @@ public class Help
     private String var2;
     private String var3;
     private long helpedOne;
+    private String location;
+    private String lat;
+    private String lng;
 }

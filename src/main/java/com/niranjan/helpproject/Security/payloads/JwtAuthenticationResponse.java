@@ -19,6 +19,7 @@ public class JwtAuthenticationResponse {
     }
 
     public JwtAuthenticationResponse(String accessToken , String role) {
+        System.out.println(role);
         this.accessToken = accessToken;
         this.role = role;
     }

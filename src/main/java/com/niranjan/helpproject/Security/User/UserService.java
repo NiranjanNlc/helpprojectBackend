@@ -1,4 +1,4 @@
-package com.niranjan.helpproject.User;
+package com.niranjan.helpproject.Security.User;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,6 +31,15 @@ public class UserService
         if(user.isPresent()) {
             return user.get();
         }  
+        return null;
+    }
+    public Customer getUserByname(String name)
+    {
+        Optional<Customer> user= Optional.ofNullable(repository.findCustomerByRid(name));
+
+        if(user.isPresent()) {
+            return user.get();
+        }
         return null;
     }
 
