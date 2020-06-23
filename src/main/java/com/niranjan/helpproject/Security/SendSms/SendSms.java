@@ -32,10 +32,10 @@ public class SendSms
     UserRepo userRepo;
 
     // Replace these placeholders with your Account Sid and Auth Token
-   // public static final String ACCOUNT_SID = "ACfc2aaba4b58b961c51b7ae49a1902c95";
+   // public static final String ACCOUNT_SID = " ";
     public static final String ph1="+9779864434561";
     public static final String ph2="+447427626522";
-    //public static final String AUTH_TOKEN = "58dbad1251838c722d29e525f1218aaa";
+    //public static final String AUTH_TOKEN = " ";
     @GetMapping("/getHelpedNumber")
     public String getHelped()
     {
